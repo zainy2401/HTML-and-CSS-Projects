@@ -1,0 +1,13 @@
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: .2s ease;
+    padding: 30px 0;
+    background-color: gray;
+}
+
+p:hover{
+    font-size: 60px; 
+    background-color: rgba(0,0,0,.85);
+    color: white;
+}

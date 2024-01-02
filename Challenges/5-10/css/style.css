@@ -1,0 +1,38 @@
+.container{
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
+video{
+    width: 100%;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.overlay:hover{
+    opacity: .8;
+}

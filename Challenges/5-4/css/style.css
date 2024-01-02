@@ -1,0 +1,19 @@
+.header{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.heading-text{
+    font-size: 5rem;
+}
+
+.subheading-text{
+    font-size: 2rem;
+}

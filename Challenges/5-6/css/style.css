@@ -1,0 +1,19 @@
+.container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    padding: 10px;
+}
+
+.column{
+    width: 50%;
+    background-color: gray;
+    border: 3px solid black;
+    color: blue;
+}
+
+.column:first-of-type{
+    margin-right: 15px;
+}

@@ -1,0 +1,12 @@
+img{
+    display: block;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 25px;
+    transition: .25s ease;
+}
+
+img:hover{
+    filter: grayscale(100%);
+}
