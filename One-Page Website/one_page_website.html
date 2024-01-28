@@ -6,6 +6,7 @@
 		<title>BMW Rental</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/one-page-website.css" type="text/css">
+		<script src="js/main.js" defer></script>
 	</head>
 
 	<body>
@@ -29,14 +30,14 @@
 				<h2>OUR CARS</h2>
 				<p>View our extensive fleet of sports cars with a variety of body styles.</p>
 				<div class="card">
-					<img src="images/m2.jpg" alt="light blue M2">
+					<img src="images/m2.jpg" onclick="openModal();currentSlide(1)" alt="light blue M2">
 					<div>
 						<h3>BMW M2</h3>
 						<p>A powerful lightweight coupe.</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="images/m3.jpg" alt="green M3">
+					<img src="images/m3.jpg" onclick="openModal();currentSlide(2)" alt="green M3">
 					<div>
 						<h3>BMW M3</h3>
 						<p>A powerful, fun 4 door sedan.</p>
@@ -44,14 +45,14 @@
 				</div>
 				<br>
 				<div class="card">
-					<img src="images/m3t.jpg" alt="green M3 Touring">
+					<img src="images/m3t.jpg" onclick="openModal();currentSlide(3)" alt="green M3 Touring">
 					<div>
 						<h3>BMW M3 Touring</h3>
 						<p>A perfect all rounder estate.</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="images/m4.jpg" alt="yellow M4">
+					<img src="images/m4.jpg" onclick="openModal();currentSlide(4)" alt="yellow M4">
 					<div>
 						<h3>BMW M4</h3>
 						<p>The top of the line sports coupe.</p>
@@ -59,14 +60,14 @@
 				</div>
 				<br>
 				<div class="card">
-					<img src="images/m5.jpg" alt="red M5">
+					<img src="images/m5.jpg" onclick="openModal();currentSlide(5)" alt="red M5">
 					<div>
 						<h3>BMW M5</h3>
 						<p>An iconic European muscle car.</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="images/m8.jpg" alt="blue M8">
+					<img src="images/m8.jpg" onclick="openModal();currentSlide(6)" alt="blue M8">
 					<div>
 						<h3>BMW M8</h3>
 						<p>A luxurious sports coupe.</p>
@@ -74,14 +75,14 @@
 				</div>
 				<br>
 				<div class="card">
-					<img src="images/x3m.jpg" alt="light blue X3">
+					<img src="images/x3m.jpg" onclick="openModal();currentSlide(7)" alt="light blue X3">
 					<div>
 						<h3>BMW X3 M</h3>
 						<p>A smooth entry-level sports SUV.</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="images/x5m.jpg" alt="green X5">
+					<img src="images/x5m.jpg" onclick="openModal();currentSlide(8)" alt="green X5">
 					<div>
 						<h3>BMW X5 M</h3>
 						<p>A high-end luxury SUV powerhouse.</p>
@@ -91,6 +92,49 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/gNn8Cy1lH94?si=Fk8eqqFF-PmNcVd6&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 		</section>
+
+		<!--Modal-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="images/m2.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="images/m3.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="images/m3t.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="images/m4.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="images/m5.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="images/m8.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="images/x3m.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="images/x5m.jpg" alt="" style="width:100%;height:auto;">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+		</div>
 
 		<!--Prices Section-->
 		<section id="prices">
